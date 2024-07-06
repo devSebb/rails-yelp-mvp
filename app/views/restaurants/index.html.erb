@@ -1,9 +1,24 @@
-<h1>All restaurants</h1>
 
-<ul>
+<div class="header shadow">
+  <h1>All restaurants</h1>
+</div>
+
+<div class="body">
+  <ul class="d-flex flex-row flex-wrap ">
   <% @restaurants.each do |restaurant| %>
-    <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+    <li class="card mx-1 my-1 shadow-sm" style="width: 10rem;">
+      <div class="card-body">
+        <h5 class="card-title text-decoration-none"><%= link_to restaurant.name, restaurant_path(restaurant), class: "card-link text-decoration-none" %></h5>
+        <h6 class="card-subtitle mb-2 text-muted text-decoration-none">Card subtitle</h6>
+        <div class="card-buttons">
+          <a href="#" class="card-link text-decoration-none">Edit</a>
+          <a href="#" class="card-link text-decoration-none">Review</a>
+        </div>
+      </div>
+    </li>
   <% end %>
 </ul>
 
-<%= link_to "New restaurant", new_restaurant_path  %>
+<div class="new-button"><%= link_to "New restaurant", new_restaurant_path %></div>
+
+</div>

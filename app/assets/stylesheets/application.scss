@@ -1,0 +1,25 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+// Generic CSS classes to be used across the application
+#body {
+  overflow-y: visible;
+  overflow-x: hidden;
+  // padding-bottom: 200px;
+}
+
+.wrapper {
+  height: calc(100vh - 9vh);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
