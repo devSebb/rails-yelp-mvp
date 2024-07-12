@@ -1,0 +1,26 @@
+.form-page{
+  background: rgb(192,143,230);
+  height: 100vh;
+  display: flex;
+
+  .container{
+    padding: 5vh;
+    background-color: white;
+    width: 50vw;
+    margin-block: 15px;
+    border-radius: 15px;
+
+    h2{
+      text-align: center;
+    }
+  }
+}
+
+.form-header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: rgb(192,143,230);
+  margin-block: 0;
+  padding-top: 20px;
+}

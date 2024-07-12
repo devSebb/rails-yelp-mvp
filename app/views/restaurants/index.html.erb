@@ -8,11 +8,11 @@
   <% @restaurants.each do |restaurant| %>
     <li class="card mx-1 my-1 shadow-sm" style="width: 10rem;">
       <div class="card-body">
-        <h5 class="card-title text-decoration-none"><%= link_to restaurant.name, restaurant_path(restaurant), class: "card-link text-decoration-none" %></h5>
-        <h6 class="card-subtitle mb-2 text-muted text-decoration-none">Card subtitle</h6>
+        <h5 class="card-title"><%= link_to restaurant.name, restaurant_path(restaurant), class: "card-link text-decoration-none text-color-gray" %></h5>
+        <h6 class="card-subtitle mb-2 text-muted text-decoration-none"><p>Rating: <%= restaurant.rating %></p></h6>
         <div class="card-buttons">
-          <a href="#" class="card-link text-decoration-none">Edit</a>
-          <a href="#" class="card-link text-decoration-none">Review</a>
+          <%= link_to "Edit", edit_restaurant_path(restaurant), class: "card-link text-decoration-none"  %>
+          <%= link_to "Review", new_restaurant_review_path(restaurant), class: "card-link text-decoration-none" %>
         </div>
       </div>
     </li>

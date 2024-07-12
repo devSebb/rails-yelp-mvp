@@ -1,0 +1,47 @@
+.show{
+  background: rgb(192,143,230);
+  height: 100vh;
+  display: flex;
+
+  .container{
+    padding: 5vh;
+    background-color: white;
+    width: 50vw;
+    margin-block: 50px;
+    border-radius: 15px;
+
+    h2{
+      text-align: center;
+    }
+  }
+}
+
+.action-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  text-decoration: none;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.action-list a {
+  text-decoration: none;
+  color: rgb(192, 143, 230);
+
+  &:hover {
+    color: purple;
+  }
+}
+
+
+
+.delete-link{
+  text-decoration: none;
+  color: rgb(192, 143, 230);
+
+  &:hover{
+    color: purple;
+  }
+}
